@@ -392,8 +392,10 @@ public class DateTimePicker extends WheelPicker {
         selectedYearIndex = findItemIndex(years, year);
         selectedMonthIndex = findItemIndex(months, month);
         selectedDayIndex = findItemIndex(days, day);
-        selectedHour = String.valueOf(hour);
-        selectedMinute = String.valueOf(minute);
+        // selectedHour = String.valueOf(hour);
+        // selectedMinute = String.valueOf(minute);
+        selectedHour = DateUtils.fillZero(hour);
+        selectedMinute = DateUtils.fillZero(minute);
     }
 
     /**
